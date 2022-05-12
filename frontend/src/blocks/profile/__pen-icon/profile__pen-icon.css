@@ -1,0 +1,10 @@
+.profile__pen-icon {
+    padding: 47px 47px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.profile__pen-icon:hover {
+    opacity: 1;
+}

@@ -1,0 +1,6 @@
+.popup__container{
+    max-width: 75vw;
+    margin:auto;
+    display: block;
+    position: relative;
+}

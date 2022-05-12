@@ -1,0 +1,28 @@
+.popup__exit-button{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.popup__exit-button:hover{
+    opacity: 0.6;
+}
+
+@media (max-width:520px){
+    .popup__exit-button{
+       width: 20px;
+       height: 20px;
+       top: -30px;
+       right: -5px;
+    }
+}
