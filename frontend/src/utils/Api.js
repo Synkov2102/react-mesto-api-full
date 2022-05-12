@@ -106,7 +106,7 @@ class Api {
         .then(res => this._getResponseData(res))
     }
 }
-const baseUrl = 'api.synkov.students.nomoredomains.xyz' || 'http://localhost:3000';
+const baseUrl = 'http://api.synkov.students.nomoredomains.xyz' || 'http://localhost:3000';
 const api = new Api({
     baseUrl: baseUrl ,
   }

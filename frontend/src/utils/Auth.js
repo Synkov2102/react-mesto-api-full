@@ -47,7 +47,7 @@ class Auth {
   }
 }
 
-const baseUrl = 'api.synkov.students.nomoredomains.xyz' || 'http://localhost:3000';
+const baseUrl = 'http://api.synkov.students.nomoredomains.xyz' || 'http://localhost:3000';
 const auth = new Auth({
     baseUrl: baseUrl,
   }
