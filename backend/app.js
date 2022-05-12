@@ -33,7 +33,7 @@ const card = require('./routes/cards');
 const auth = require('./middlewares/auth');
 
 // подключаемся к серверу mongo
-mongoose.connect('mongodb://51.250.31.14:27017/mestodb');
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
@@ -54,7 +54,6 @@ app.use((req, res, next) => {
   if (allowedCors.includes(origin)) {
     res.header('Access-Control-Allow-Origin', origin);
   }
-  res.header('Access-Control-Allow-Origin', origin);
   const { method } = req; // Сохраняем тип запроса (HTTP-метод) в соответствующую переменную
 
   // Значение для заголовка Access-Control-Allow-Methods по умолчанию (разрешены все типы запросов)
@@ -67,7 +66,6 @@ app.use((req, res, next) => {
     if (allowedCors.includes(origin)) {
       res.header('Access-Control-Allow-Origin', origin);
     }
-    res.header('Access-Control-Allow-Origin', origin);
     // разрешаем кросс-доменные запросы любых типов (по умолчанию)
     res.header('Access-Control-Allow-Methods', DEFAULT_ALLOWED_METHODS);
     // разрешаем кросс-доменные запросы с этими заголовками
