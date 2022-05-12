@@ -33,7 +33,7 @@ const card = require('./routes/cards');
 const auth = require('./middlewares/auth');
 
 // подключаемся к серверу mongo
-mongoose.connect('mongodb://localhost:27017/mestodb');
+mongoose.connect('mongodb://51.250.31.14:27017/mestodb');
 
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
