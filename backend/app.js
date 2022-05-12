@@ -39,6 +39,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 const allowedCors = [
   'https://praktikum.tk',
   'http://praktikum.tk',
+  'https://synkov.students.nomoredomains.work/',
+  'http://synkov.students.nomoredomains.work/',
   'http://localhost:3006',
 ];
 
