@@ -47,7 +47,7 @@ class Auth {
   }
 }
 
-const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
+const baseUrl = 'api.synkov.students.nomoredomains.xyz' || 'http://localhost:3000';
 const auth = new Auth({
     baseUrl: baseUrl,
   }
