@@ -47,8 +47,9 @@ class Auth {
   }
 }
 
+const baseUrl = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
 const auth = new Auth({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: baseUrl,
   }
 );
 
