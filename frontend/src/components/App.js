@@ -37,7 +37,6 @@ function App() {
       api
       .getProfileInfo()
       .then((data) => {
-        console.log(data)
         setCurrentUser(data.user);
       })
       .catch((err) => {
