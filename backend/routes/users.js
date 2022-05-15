@@ -2,7 +2,7 @@ const user = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 
 const URLErr = new Error('Неправильный формат ссылки');
-URLErr.statusCode = 401;
+URLErr.statusCode = 400;
 const validator = require('validator');
 
 const validateURL = (value) => {

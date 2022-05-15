@@ -4,7 +4,7 @@ const { celebrate, Joi } = require('celebrate');
 const validator = require('validator');
 
 const URLErr = new Error('Неправильный формат ссылки');
-URLErr.statusCode = 401;
+URLErr.statusCode = 400;
 
 const validateURL = (value) => {
   if (!validator.isURL(value, { require_protocol: true })) {

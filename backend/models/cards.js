@@ -26,6 +26,10 @@ const cardSchema = new mongoose.Schema(
       ref: 'user',
       default: [],
     }],
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
   },
   {
     versionKey: false,
