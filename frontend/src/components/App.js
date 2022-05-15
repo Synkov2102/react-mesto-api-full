@@ -45,7 +45,6 @@ function App() {
 
     api
       .getCardsData()
-      
       .then((data) => {
         setCards(data.cards);
       })
@@ -54,10 +53,6 @@ function App() {
       });
     }
     tokenCheck()
-  },[]);
-
-  React.useEffect(() => {
-    tokenCheck();
   },[history.location]);
 
   function tokenCheck() {
